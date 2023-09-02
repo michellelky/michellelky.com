@@ -1,0 +1,30 @@
+.card {
+  background-color: var(--bg-card);
+  border-radius: 1.5rem;
+  text-align: left;
+}
+.card:hover {
+  transform: rotateZ(1deg);
+  transition-duration: 0.1s;
+}
+
+.card img {
+  border-radius: inherit;
+}
+
+.textWrapper {
+  padding: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.cardBody {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  color: var(--text-primary);
+}

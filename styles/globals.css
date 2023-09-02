@@ -1,0 +1,65 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --color-gray-100: #f7f7f7;
+  --color-gray-200: #e6e9ee;
+  --color-gray-300: #dde0e4;
+  --color-gray-400: #818890;
+  --color-gray-500: #535661;
+  --color-gray-600: #4b4c53;
+  --color-gray-700: #3a3d4a;
+  --color-gray-800: #2e3039;
+  --color-gray-900: #1f2028;
+  --color-gray-transparent: rgba(217, 217, 217, 0.2);
+  --color-turquoise: #529da4;
+  --color-turquoise-600: #257c85;
+  --color-yellow: #f9d454;
+  --color-orange: #ce6b00;
+  --color-brown: #784815;
+  --color-beige: #f5ecdd;
+}
+
+.light {
+  --accent: var(--color-yellow);
+  --bg-menu: var(--color-turquoise-600);
+  --bg-main: var(--color-turquoise);
+  --bg-primary: var(--color-beige);
+  --bg-card: var(--color-white);
+  --text-main: var(--color-white);
+  --text-primary: var(--color-gray-800);
+  --text-secondary: var(--color-gray-500);
+  --shadow: var(--color-yellow);
+  color-scheme: light;
+}
+
+.dark {
+  --text-primary: var(--color-white);
+  --text-secondary: var(--color-gray-300);
+  --shadow: var(--color-yellow);
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--bg-main);
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.site-base {
+  background-color: var(--bg-primary);
+  padding-top: 4rem;
+}
+
+.full-page {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}

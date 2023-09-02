@@ -1,0 +1,23 @@
+.container {
+  background-color: var(--bg-primary);
+  padding: 3rem 4rem;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectContainer {
+  padding: 5rem 0;
+}
+
+.title {
+  color: var(--text-primary);
+}
+
+.subtitle {
+  color: var(--text-primary);
+  line-height: 1.25rem;
+  font-size: 1.125rem;
+  margin-top: 1rem;
+}

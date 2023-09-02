@@ -1,0 +1,53 @@
+.footer {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  position: relative;
+  padding: 4rem 1rem 3rem;
+}
+
+.contact {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.contactTitle {
+  margin-bottom: 1rem;
+}
+
+.contactBody {
+  margin-bottom: 1rem;
+  max-width: 450px;
+}
+.contact a {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-decoration-color: var(--shadow);
+  text-underline-offset: 0.5rem;
+}
+
+.footerRow {
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.social {
+  display: flex;
+  flex-direction: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.social > a {
+  margin-left: 2rem;
+}
+
+.wave {
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  right: 0;
+}

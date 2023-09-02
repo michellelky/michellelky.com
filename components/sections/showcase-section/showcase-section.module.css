@@ -1,0 +1,89 @@
+.circleTop {
+  /* matching hero bg */
+  background-color: var(--color-brown);
+  position: relative;
+  overflow: hidden;
+  height: 20vw;
+}
+.circleTop::after {
+  background-color: var(--accent);
+  content: "";
+  display: block;
+  z-index: 1;
+  border-radius: 50%;
+  height: 50vw;
+  width: 100vw;
+  position: absolute;
+  top: 10vw;
+  left: 0;
+  transform: scale(1.3) rotate(-8deg);
+}
+
+.circleBottom {
+  position: relative;
+  overflow: hidden;
+  height: 20vw;
+  background-color: var(--bg-primary);
+}
+.circleBottom::after {
+  background-color: var(--accent);
+  border-radius: 50%;
+  bottom: 12vw;
+  content: "";
+  display: block;
+  height: 45vw;
+  left: 0;
+  position: absolute;
+  transform: scale(1.3);
+  width: 100vw;
+}
+
+.textWrapper {
+  background-color: var(--accent);
+  padding: 1rem;
+  padding-bottom: 4rem;
+}
+.textWrapper p {
+  text-align: center;
+  font-size: 0.925rem;
+  font-weight: 600;
+  max-width: 600px;
+  margin: 0 auto;
+}
+@media (min-width: 1280px) {
+  .textWrapper p {
+    font-size: 1rem;
+  }
+}
+
+.projectContainer {
+  background-color: var(--accent);
+  min-height: 60vh;
+  padding: 0 1rem;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 40px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media (max-width: 630px) {
+  .projectGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.projectGrid a:nth-child(2) {
+  margin-top: 4rem;
+}
+.projectGrid a:nth-child(3) {
+  margin-top: -4rem;
+}
+@media (max-width: 630px) {
+  .projectGrid a {
+    margin-top: 2rem !important;
+  }
+}
