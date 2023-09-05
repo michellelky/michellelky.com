@@ -30,3 +30,8 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 - Language
 - Blog
 - About
+
+
+## TODO
+
+Dark mode

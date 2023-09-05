@@ -2,42 +2,28 @@ import React from "react";
 import styles from "./showcase-section.module.css";
 import ProjectCard from "@/components/project-card";
 
-const PROJECTS = [
-  {
-    id: 1,
-    name: "Praise-HK",
-    desc: "Personalized air quality tracking app",
-    type: "mobile",
-    slug: "praisehk",
-    thumbnail: "",
-  },
-  {
-    id: 2,
-    name: "Embrace Blue Lantau",
-    desc: "Guided tour app with AR games",
-    type: "mobile",
-    slug: "embrace-blue-lantau",
-    thumbnail: "",
-  },
-  {
-    id: 3,
-    name: "Tamacorgi",
-    desc: "NFT collection and minting",
-    type: "web",
-    slug: "tamacorgi",
-    thumbnail: "",
-  },
-  {
-    id: 4,
-    name: "Bid it",
-    desc: "Community marketplace app development",
-    type: "mobile",
-    slug: "bid-it-app",
-    thumbnail: "",
-  },
-];
+type ProjectMD = {
+  slug: string;
+  title: string;
+  desc: string;
+  type: string;
+  technologies: string[];
+  links?: {
+    web?: string;
+    apple?: string;
+    google?: string;
+  };
+  builtAt: string;
+  banner: string;
+  thumbnail: string;
+  order: number;
+};
 
-export default function ShowcaseSection() {
+interface Props {
+  data: ProjectMD[];
+}
+
+export default function ShowcaseSection({ data }: Props) {
   return (
     <section>
       <div className={styles.circleTop} />
@@ -52,10 +38,10 @@ export default function ShowcaseSection() {
 
         <div className={styles.projectContainer}>
           <div className={styles.projectGrid}>
-            {PROJECTS.map((project) => (
+            {data.map((project) => (
               <ProjectCard
-                key={`p${project.id}`}
-                name={project.name}
+                key={`${project.slug}`}
+                name={project.title}
                 description={project.desc}
                 to={`/project/${project.slug}`}
                 thumbnail={project.thumbnail}

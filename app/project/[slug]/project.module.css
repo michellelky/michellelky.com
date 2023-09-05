@@ -1,0 +1,70 @@
+.container {
+  padding: 4rem 1rem;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    padding: 4rem 3rem;
+  }
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  max-width: 650px;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.bannerWrapper {
+  margin: 3rem auto;
+}
+
+.body {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.heading {
+  color: var(--text-secondary);
+  font-weight: 700;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  grid-gap: 2rem;
+  max-width: 700px;
+  margin: 2rem auto;
+}
+
+.infoGrid a {
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-decoration-color: var(--shadow);
+  text-underline-offset: 0.5rem;
+  margin-right: 1.5rem;
+}
+
+.btnRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.categoryBtn {
+  border: solid #faa423 2px;
+  border-radius: 32px;
+  padding: 0.25rem 1rem;
+  margin-right: 1.5rem;
+}
+
+.categoryText {
+  color: var(--text-primary);
+  text-align: center;
+}

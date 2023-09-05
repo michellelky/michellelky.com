@@ -1,0 +1,11 @@
+.image {
+  background-color: var(--color-gray-400);
+  backdrop-filter: none;
+  object-fit: cover;
+  border-radius: 30px;
+  transition: 0.5s ease-in-out;
+}
+
+.loading {
+  backdrop-filter: blur(30px);
+}
