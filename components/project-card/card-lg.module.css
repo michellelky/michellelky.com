@@ -18,6 +18,7 @@
 .card img {
   border-radius: inherit;
   width: 25vw;
+  object-fit: cover;
 }
 @media (max-width: 630px) {
   .card img {

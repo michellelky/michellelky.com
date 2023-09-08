@@ -10,6 +10,8 @@
 
 .card img {
   border-radius: inherit;
+  object-fit: cover;
+  max-height: 330px;
 }
 
 .textWrapper {

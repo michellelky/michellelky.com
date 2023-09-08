@@ -11,10 +11,15 @@
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 1.1;
+  line-height: 1.2;
   max-width: 650px;
+}
+@media (max-width: 425px) {
+  .title {
+    font-size: 2rem;
+  }
 }
 
 .subtitle {
@@ -33,15 +38,15 @@
 
 .heading {
   color: var(--text-secondary);
-  font-weight: 700;
+  font-size: 0.9rem;
 }
 
 .infoGrid {
   display: grid;
   grid-template-columns: 2fr 6fr;
-  grid-gap: 2rem;
+  gap: 2rem;
   max-width: 700px;
-  margin: 2rem auto;
+  margin: 3rem auto;
 }
 
 .infoGrid a {
@@ -49,19 +54,22 @@
   text-decoration-thickness: 4px;
   text-decoration-color: var(--shadow);
   text-underline-offset: 0.5rem;
-  margin-right: 1.5rem;
+  margin-right: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .btnRow {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .categoryBtn {
   border: solid #faa423 2px;
   border-radius: 32px;
   padding: 0.25rem 1rem;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .categoryText {

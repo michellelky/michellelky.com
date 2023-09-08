@@ -1,5 +1,8 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
-import Image, { ImageProps } from "next/image";
+import Image from "next/image";
+
+import ColumnGrid from "../column-grid";
+import { OverviewBlock } from "./overview-block";
 
 interface MarkdownProps {
   source: string;
@@ -17,6 +20,8 @@ const components = {
       />
     );
   },
+  ColumnGrid,
+  OverviewBlock,
 };
 
 export default function Markdown({ source }: MarkdownProps) {

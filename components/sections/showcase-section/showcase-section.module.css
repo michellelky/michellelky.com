@@ -64,26 +64,19 @@
 
 .projectGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 40px;
-  row-gap: 40px;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
   max-width: 700px;
   margin: 0 auto;
 }
-@media (max-width: 630px) {
+@media (min-width: 630px) {
   .projectGrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
-}
-
-.projectGrid a:nth-child(2) {
-  margin-top: 4rem;
-}
-.projectGrid a:nth-child(3) {
-  margin-top: -4rem;
-}
-@media (max-width: 630px) {
-  .projectGrid a {
-    margin-top: 2rem !important;
+  .projectGrid a:nth-child(2) {
+    margin-top: 6rem;
+  }
+  .projectGrid a:nth-child(3) {
+    margin-top: -6rem;
   }
 }

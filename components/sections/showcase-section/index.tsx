@@ -1,23 +1,8 @@
 import React from "react";
-import styles from "./showcase-section.module.css";
-import ProjectCard from "@/components/project-card";
 
-type ProjectMD = {
-  slug: string;
-  title: string;
-  desc: string;
-  type: string;
-  technologies: string[];
-  links?: {
-    web?: string;
-    apple?: string;
-    google?: string;
-  };
-  builtAt: string;
-  banner: string;
-  thumbnail: string;
-  order: number;
-};
+import ProjectCard from "@/components/project-card";
+import styles from "./showcase-section.module.css";
+import { ProjectMD } from "@/app/page";
 
 interface Props {
   data: ProjectMD[];

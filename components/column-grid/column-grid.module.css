@@ -1,0 +1,23 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  max-width: 700px;
+  margin: 4rem auto;
+}
+
+.col {
+  display: grid;
+  gap: 4rem;
+  grid-auto-rows: min-content;
+}
+
+@media (min-width: 630px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .col:nth-child(2) {
+    margin-top: 10rem;
+  }
+}

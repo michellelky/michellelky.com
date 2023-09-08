@@ -24,8 +24,14 @@ export default function ProjectCard({
   return (
     <Link href={to}>
       <div className={styles.card}>
-        {/* TODO - mockup */}
-        {/* <Image src={thumbnail} alt={name} /> */}
+        {thumbnail && (
+          <Image
+            src={`/images/projects/${thumbnail}`}
+            alt={name}
+            width={600}
+            height={600}
+          />
+        )}
 
         <div className={styles.textWrapper}>
           <p className={styles.cardTitle}>{name}</p>

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import clsx from "clsx";
 
 import { Markdown, BannerImage } from "@/components/markdown";
+import Link from "@/components/external-link";
 import { loadMarkdown } from "@/helpers/file-helper";
 import styles from "./project.module.css";
 
@@ -37,7 +38,7 @@ async function ProjectDetail({ params }: any) {
   if (!frontmatter) {
     notFound();
   }
-  const { title, desc, banner, technologies, links } = frontmatter;
+  const { title, desc, banner, technologies, links, builtAt } = frontmatter;
 
   return (
     <div className={styles.container}>
@@ -45,7 +46,7 @@ async function ProjectDetail({ params }: any) {
       <h1 className={styles.title}>{desc}</h1>
 
       <div className={styles.bannerWrapper}>
-        <BannerImage src={`/images/${banner}`} alt={title} />
+        <BannerImage src={`/images/projects/${banner}`} alt={title} />
       </div>
 
       <div className={clsx(styles.infoGrid, styles.body)}>
@@ -67,22 +68,18 @@ async function ProjectDetail({ params }: any) {
         <div className={styles.infoGrid}>
           <p className={styles.heading}>Links</p>
           <div className={styles.btnRow}>
-            {links.web && (
-              <a href={links.web} target="_blank" rel="noreferrer noopener">
-                Visit Site
-              </a>
-            )}
-            {links.apple && (
-              <a href={links.apple} target="_blank" rel="noreferrer noopener">
-                App Store
-              </a>
-            )}
-            {links.google && (
-              <a href={links.google} target="_blank" rel="noreferrer noopener">
-                Google Play
-              </a>
-            )}
+            {links.github && <Link href={links.github}>GitHub</Link>}
+            {links.web && <Link href={links.web}>Visit Site</Link>}
+            {links.apple && <Link href={links.apple}>App Store</Link>}
+            {links.google && <Link href={links.google}>Google Play</Link>}
           </div>
+        </div>
+      )}
+
+      {builtAt && (
+        <div className={styles.infoGrid}>
+          <p className={styles.heading}>Built at</p>
+          <p>{builtAt}</p>
         </div>
       )}
     </div>
