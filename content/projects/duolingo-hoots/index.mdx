@@ -4,9 +4,48 @@ desc: Daily writing prompt to practice foreign language
 type: web
 technologies:
   - React
+  - styled-components
 links:
   web:
-thumbnail:
-banner:
+  github: https://github.com/michellelky/duolingo-hoots-archive
+thumbnail: hoots-thumbnail.jpg
+banner: hoots-banner.jpg
 order: 1
 ---
+
+## What is Hoots?
+
+Duolingo Hoots is a Beta feature of daily writing exercise, where users are given a prompt and some example sentences. Then the user has to write their own response.
+
+## Why build a clone?
+
+![original screenshot](/images/projects/hoots-screenshot-original.png)
+
+> Writing exercises are finding a new home! We've been working hard to migrate writing exercises to stories. So far, you can find them in any story in Set 37 and beyond. With this migration, we'll be shutting down the daily prompts on 3/28.
+
+As the platform is shut down, I built a new home for my submitted answers.
+
+For some time, I would only write using this feature and read other learners' submissions instead of doing "actual" lessons. It helped a lot more to think and write in the language. When I found out Hoots was going away after forum, I needed to save all my progress... In a way, Hoots was like journaling prompt in your target language. It's my journal in French.
+
+## 📝 Getting the material
+
+As all prompts data was available from API in the Network tab, there was no need for data scraping. The main part is retrieving the information to match the layout.
+
+```json
+{
+  "date": { "date": 3, "month": 5, "year": 2021 },
+  "completed": false,
+  "text": "Dans quel type de magasins détestes-tu aller ? Pourquoi ?",
+  "translation": "What type of stores do you hate going to? Why?",
+  "character": {
+    "gender": "male",
+    "name": "Vikram",
+    "backgroundColor": "13c67f",
+    "lipColor": "10a66b"
+  }
+}
+```
+
+For example, there should be 3 types of list item: completed or uncompleted, and if it's today.
+
+![list type](/images/projects/hoots-list-type.png)

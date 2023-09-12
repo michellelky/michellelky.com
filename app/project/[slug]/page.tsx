@@ -2,7 +2,8 @@ import React from "react";
 import { notFound } from "next/navigation";
 import clsx from "clsx";
 
-import { Markdown, BannerImage } from "@/components/markdown";
+import Markdown from "@/components/markdown";
+import BannerImage from "@/components/banner-image";
 import Link from "@/components/external-link";
 import { loadMarkdown } from "@/helpers/file-helper";
 import styles from "./project.module.css";

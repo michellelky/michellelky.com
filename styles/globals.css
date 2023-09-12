@@ -1,15 +1,15 @@
 :root {
   --color-black: #000;
   --color-white: #fff;
-  --color-gray-100: #f7f7f7;
-  --color-gray-200: #e6e9ee;
-  --color-gray-300: #dde0e4;
-  --color-gray-400: #818890;
-  --color-gray-500: #535661;
-  --color-gray-600: #4b4c53;
-  --color-gray-700: #3a3d4a;
-  --color-gray-800: #2e3039;
-  --color-gray-900: #1f2028;
+  --color-gray-100: #f3f4f6;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-400: #9ca3af;
+  --color-gray-500: #6b7280;
+  --color-gray-600: #4b5563;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
   --color-gray-transparent: rgba(217, 217, 217, 0.2);
   --color-turquoise: #529da4;
   --color-turquoise-600: #257c85;
@@ -68,11 +68,27 @@ article h2,
 h3,
 h4,
 h5 {
-  font-size: 1rem;
-  color: var(--text-secondary);
-  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 article p {
+  margin-bottom: 1rem;
+}
+
+article blockquote {
+  color: var(--text-secondary);
+  border-left: solid 4px var(--color-gray-300);
+  padding-left: 1rem;
+  margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.md-image img {
+  border-radius: 30px;
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
 }

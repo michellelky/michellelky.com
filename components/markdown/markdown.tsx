@@ -1,7 +1,8 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Image from "next/image";
 
-import ColumnGrid from "../column-grid";
+import ColumnGrid from "@/components/column-grid";
+import CodeSnippet from "@/components/code-snippet";
 import { OverviewBlock } from "./overview-block";
 
 interface MarkdownProps {
@@ -11,15 +12,12 @@ interface MarkdownProps {
 const components = {
   img: ({ src, alt }: any) => {
     return (
-      <Image
-        src={src}
-        alt={alt}
-        width={700}
-        height={466} // 16:9
-        style={{ objectFit: "cover", borderRadius: 30 }}
-      />
+      <div className="md-image">
+        <Image src={src} alt={alt} fill sizes="100vw" />
+      </div>
     );
   },
+  pre: CodeSnippet,
   ColumnGrid,
   OverviewBlock,
 };
