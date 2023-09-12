@@ -17,6 +17,8 @@
   --color-orange: #ce6b00;
   --color-brown: #784815;
   --color-beige: #f5ecdd;
+  --content-width: 700px;
+  --viewport-padding: 16px;
 }
 
 .light {
@@ -83,12 +85,4 @@ article blockquote {
   padding-left: 1rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
-}
-
-.md-image img {
-  border-radius: 30px;
-  object-fit: contain;
-  width: 100% !important;
-  position: relative !important;
-  height: unset !important;
 }

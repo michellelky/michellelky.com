@@ -2,9 +2,9 @@
   background-color: var(--bg-primary);
   display: grid;
   grid-template-columns: 2fr 3fr;
-  gap: 3rem 2rem;
+  gap: 3rem;
   justify-items: center;
-  max-width: 700px;
+  max-width: var(--content-width);
   padding: 0 1rem;
   margin: 0 auto;
 }

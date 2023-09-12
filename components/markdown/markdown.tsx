@@ -4,6 +4,7 @@ import Image from "next/image";
 import ColumnGrid from "@/components/column-grid";
 import CodeSnippet from "@/components/code-snippet";
 import { OverviewBlock } from "./overview-block";
+import styles from "./markdown.module.css";
 
 interface MarkdownProps {
   source: string;
@@ -12,7 +13,7 @@ interface MarkdownProps {
 const components = {
   img: ({ src, alt }: any) => {
     return (
-      <div className="md-image">
+      <div className={styles.imageWrapper}>
         <Image src={src} alt={alt} fill sizes="100vw" />
       </div>
     );

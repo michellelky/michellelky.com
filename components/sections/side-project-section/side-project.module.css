@@ -2,7 +2,7 @@
   background-color: var(--bg-primary);
   padding: 3rem 1rem;
   min-height: 60vh;
-  max-width: 700px;
+  max-width: var(--content-width);
   display: flex;
   flex-direction: column;
   align-items: center;
