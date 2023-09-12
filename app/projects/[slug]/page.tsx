@@ -7,16 +7,22 @@ import BannerImage from "@/components/banner-image";
 import Link from "@/components/external-link";
 import { loadMarkdown } from "@/helpers/file-helper";
 import styles from "./project.module.css";
+import { ResolvingMetadata } from "next";
 
 type Props = {
   params: { slug: string };
 };
 
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata,
+) {
   const { frontmatter } = await loadMarkdown(params.slug);
-  const { title, desc } = frontmatter;
+  const { title, desc, banner } = frontmatter;
 
   const combinedTitle = `${title} | Michelle Lau`;
+  const previousImages = (await parent).openGraph?.images || [];
+  const images = [`/images/projects/${banner}`, ...previousImages];
 
   return {
     title: combinedTitle,
@@ -24,11 +30,13 @@ export async function generateMetadata({ params }: Props) {
     openGraph: {
       title: combinedTitle,
       description: desc,
+      images,
     },
     twitter: {
       card: "summary_large_image",
       title: combinedTitle,
       description: desc,
+      images,
     },
   };
 }

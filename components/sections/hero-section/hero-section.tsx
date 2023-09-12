@@ -24,7 +24,9 @@ export default function HeroSection({ title, subtitle }: Props) {
   React.useEffect(() => {
     const updateParallax = (e: Event) => {
       const top = window.scrollY;
-      setScrollY(top);
+      if (typeof top === "number") {
+        setScrollY(top);
+      }
     };
 
     window.addEventListener("scroll", updateParallax);

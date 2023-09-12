@@ -1,13 +1,28 @@
+import type { Metadata } from "next";
+
 import "@/styles/reset.css";
 import "@/styles/globals.css";
-import type { Metadata } from "next";
+import { poppins } from "@/styles/fonts";
 import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
-import { poppins } from "@/styles/fonts";
+
+const title = "Michelle Lau - Frontend Developer";
+const description = "Portfolio of Michelle Lau - Frontend Developer";
 
 export const metadata: Metadata = {
-  title: "Michelle Lau - Frontend Developer",
-  description: "Portfolio of Michelle Lau - Frontend Developer",
+  title,
+  description,
+  metadataBase: new URL("https://michellelky.com"),
+  openGraph: {
+    title,
+    description,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 export default function RootLayout({
