@@ -10,13 +10,13 @@ export async function getMarkdownList() {
 
   const markdowns: any[] = [];
 
-  for (let fileName of fileNames) {    
-    const rawContent = await readFile(`${projectPath}/${fileName}/index.mdx`);
+  for (let fileName of fileNames) {
+    const rawContent = await readFile(`${projectPath}/${fileName}`);
 
     const { data: frontmatter } = matter(rawContent);
 
     markdowns.push({
-      slug: fileName,
+      slug: fileName.replace(".mdx", ""),
       ...frontmatter,
     });
   }
@@ -27,7 +27,7 @@ export async function getMarkdownList() {
 export const loadMarkdown = React.cache(async function loadMarkdown(
   slug: string,
 ) {
-  const rawContent = await readFile(`${projectPath}/${slug}/index.mdx`);
+  const rawContent = await readFile(`${projectPath}/${slug}.mdx`);
 
   const { data: frontmatter, content } = matter(rawContent);
 

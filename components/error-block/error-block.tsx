@@ -1,6 +1,7 @@
 import React from "react";
-import styles from "./error.module.css";
+
 import { baloo } from "@/styles/fonts";
+import styles from "./error-block.module.css";
 
 interface Props {
   title: string;

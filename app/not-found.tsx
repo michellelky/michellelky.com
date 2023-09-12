@@ -1,5 +1,5 @@
 import React from "react";
-import ErrorBlock from "@/components/error";
+import ErrorBlock from "@/components/error-block";
 
 export default function NotFound() {
   return (

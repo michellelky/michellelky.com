@@ -1,26 +1,2 @@
-import Link from "next/link";
-import React from "react";
-import styles from "./navbar.module.css";
-
-const LINKS = [
-  { name: "Work", to: "/" },
-  { name: "Photo", to: "/photography" },
-  { name: "Language", to: "/language" },
-  { name: "About", to: "/about" },
-];
-
-export default function NavBar() {
-  return (
-    <header className={styles.header}>
-      <nav className={styles.navigation}>
-        <ul className={styles.menu}>
-          {LINKS.map((link) => (
-            <li key={link.to}>
-              <Link href={link.to}>{link.name}</Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </header>
-  );
-}
+export * from "./navbar";
+export { default } from "./navbar";
