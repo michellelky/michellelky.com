@@ -1,7 +1,5 @@
 import React from "react";
-import Image from "next/image";
 
-import Wave from "@/public/images/footer-wave.svg";
 import styles from "./footer.module.css";
 
 export default function Footer() {
@@ -23,7 +21,8 @@ export default function Footer() {
           <a>O</a>
         </div>
       </div>
-      <Image src={Wave} className={styles.wave} alt='wave' />
+
+      <div className={styles.waveImg} />
     </footer>
   );
 }

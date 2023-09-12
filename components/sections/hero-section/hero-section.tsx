@@ -1,9 +1,7 @@
-import React from "react";
-import Image from "next/image";
+"use client";
 
-import Dune from "@/public/images/dune-main-low.svg";
-import MountainFlat from "@/public/images/mountain-flat.svg";
-import MountainPeak from "@/public/images/mountain-peak.svg";
+import React from "react";
+
 import styles from "./hero-section.module.css";
 
 interface Props {
@@ -12,36 +10,55 @@ interface Props {
 }
 
 export default function HeroSection({ title, subtitle }: Props) {
+  const [scrollY, setScrollY] = React.useState(0);
+
+  const getYPos = (speed: number) => {
+    if (window.innerWidth < 700) {
+      return;
+    }
+    return -((scrollY * speed) / 100);
+  };
+
+  React.useEffect(() => {
+    const updateParallax = (e: Event) => {
+      const top = window.scrollY;
+      setScrollY(top);
+    };
+
+    window.addEventListener("scroll", updateParallax);
+
+    return () => {
+      window.removeEventListener("scroll", updateParallax);
+    };
+  }, []);
+
   return (
     <section className={styles.container}>
       <div className={styles.hero}>
         <h1 className={styles.heroTitle}>{title}</h1>
         <p className={styles.heroSubtitle}>{subtitle}</p>
       </div>
-      <div className={styles.sunImg} id={styles.sunSm} />
-      <div className={styles.sunImg} id={styles.sunLg} />
-
-      <Image
-        src={Dune}
-        className={styles.sandImg}
-        id={styles.dune}
-        alt="dune"
-        priority
+      <div
+        className={styles.sunImg}
+        id={styles.sunSm}
+        style={{ transform: `translateY(${scrollY * 0.2}px)` }}
         />
-      <Image
-        src={MountainFlat}
-        className={styles.sandImg}
-        id={styles.mountain1}
-        alt="backdrop mountain"
-        priority
-        />
-      <Image
-        src={MountainPeak}
+      <div
+        className={styles.sunImg}
+        id={styles.sunLg}
+        style={{ transform: `translateY(${scrollY * 0.5}px)` }}
+      />
+      <div
         className={styles.sandImg}
         id={styles.mountain2}
-        alt="backdrop mountain"
-        priority
+        style={{ transform: `translateY(${getYPos(10)}px)` }}
       />
+      <div
+        className={styles.sandImg}
+        id={styles.mountain1}
+        style={{ transform: `translateY(${getYPos(15)}px)` }}
+      />
+      <div className={styles.sandImg} id={styles.dune} />
     </section>
   );
 }
