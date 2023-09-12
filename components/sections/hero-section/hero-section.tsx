@@ -13,8 +13,10 @@ export default function HeroSection({ title, subtitle }: Props) {
   const [scrollY, setScrollY] = React.useState(0);
 
   const getYPos = (speed: number) => {
-    if (window.innerWidth < 700) {
-      return;
+    if (typeof window !== "undefined") {
+      if (window.innerWidth < 700) {
+        return;
+      }
     }
     return -((scrollY * speed) / 100);
   };
@@ -42,7 +44,7 @@ export default function HeroSection({ title, subtitle }: Props) {
         className={styles.sunImg}
         id={styles.sunSm}
         style={{ transform: `translateY(${scrollY * 0.2}px)` }}
-        />
+      />
       <div
         className={styles.sunImg}
         id={styles.sunLg}
