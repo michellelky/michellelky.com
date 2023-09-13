@@ -1,12 +1,32 @@
 .container {
-  background-color: var(--bg-primary);
-  height: 100%;
-  max-width: 1000px;
-  padding: 4rem 1rem;
-  margin: 0 auto;
+  background-color: #fff;
+  max-width: 1500px;
+  padding: 0 3rem;
 }
-@media (min-width: 768px) {
+
+.galleryContainer {
+  margin: 0 auto;
+  padding-bottom: 3rem;
+}
+
+.fullImg {
+  width: 100%;
+  max-width: 1500px;
+  position: relative;
+}
+.fullImg img {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
+}
+
+@media (max-width: 768px) {
   .container {
-    padding: 4rem 3rem;
+    padding: 0 16px;
+  }
+
+  .galleryContainer {
+    padding-top: 8vh;
   }
 }

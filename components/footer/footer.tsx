@@ -1,7 +1,7 @@
 import React from "react";
 import { FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
 
-import { EMAIL, SOCIAL_LINKS } from "@/content/constants";
+import { EMAIL, GITHUB, LINKEDIN, TWITTER } from "@/content/constants";
 import ExternalLink from "../external-link";
 import styles from "./footer.module.css";
 
@@ -21,13 +21,13 @@ export default function Footer() {
       <div className={styles.footerRow}>
         <p>© designed & built by Michelle Lau</p>
         <div className={styles.social}>
-          <ExternalLink href={SOCIAL_LINKS.TWITTER}>
+          <ExternalLink href={TWITTER}>
             <FiTwitter size={ICON_SIZE} />
           </ExternalLink>
-          <ExternalLink href={SOCIAL_LINKS.GITHUB}>
+          <ExternalLink href={GITHUB}>
             <FiGithub size={ICON_SIZE} />
           </ExternalLink>
-          <ExternalLink href={SOCIAL_LINKS.LINKEDIN}>
+          <ExternalLink href={LINKEDIN}>
             <FiLinkedin size={ICON_SIZE} />
           </ExternalLink>
         </div>
