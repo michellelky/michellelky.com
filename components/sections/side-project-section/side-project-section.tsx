@@ -1,7 +1,7 @@
 import React from "react";
 
 import ProjectCard from "@/components/project-card";
-import { ProjectMD } from "@/app/page";
+import { ProjectMD } from "@/app/(main)/page";
 import styles from "./side-project.module.css";
 
 interface Props {

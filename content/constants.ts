@@ -1,3 +1,4 @@
+export const BASE_URL = "https://michellelky.com";
 export const EMAIL = "michellelkys@gmail.com";
 
 export const SOCIAL_LINKS = {

@@ -5,6 +5,7 @@ import "@/styles/globals.css";
 import { poppins } from "@/styles/fonts";
 import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
+import { BASE_URL } from '@/content/constants';
 
 const title = "Michelle Lau - Frontend Developer";
 const description = "Portfolio of Michelle Lau - Frontend Developer";
@@ -12,7 +13,7 @@ const description = "Portfolio of Michelle Lau - Frontend Developer";
 export const metadata: Metadata = {
   title,
   description,
-  metadataBase: new URL("https://michellelky.com"),
+  metadataBase: new URL(BASE_URL),
   openGraph: {
     title,
     description,
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default function MainRootLayout({
   children,
 }: {
   children: React.ReactNode;

@@ -5,8 +5,8 @@ import styles from "./navbar.module.css";
 
 const LINKS = [
   { name: "Work", to: "/" },
-  { name: "Photo", to: "/photography" },
   { name: "Language", to: "/language" },
+  { name: "Photo", to: "/photography" },
   { name: "About", to: "/about" },
 ];
 
