@@ -38,10 +38,11 @@ export default function HeroSection({ title, subtitle }: Props) {
 
   return (
     <section className={styles.container}>
-      <div className={styles.hero}>
-        <h1 className={styles.heroTitle}>{title}</h1>
-        <p className={styles.heroSubtitle}>{subtitle}</p>
-      </div>
+        <div className={styles.hero}>
+          <h1 className={styles.heroTitle}>{title}</h1>
+          <p className={styles.heroSubtitle}>{subtitle}</p>
+        </div>
+
       <div
         className={styles.sunImg}
         id={styles.sunSm}

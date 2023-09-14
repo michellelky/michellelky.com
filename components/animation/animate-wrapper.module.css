@@ -1,0 +1,13 @@
+.default {
+  opacity: 0;
+  transition: opacity 600ms ease-in, transform 300ms ease-out;
+  transform: translateY(20vh);
+  visibility: hidden;
+  will-change: opacity, visibility;
+}
+
+.fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}

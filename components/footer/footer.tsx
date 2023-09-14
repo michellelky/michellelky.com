@@ -1,8 +1,8 @@
 import React from "react";
 import { FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
 
+import ExternalLink from "@/components/external-link";
 import { EMAIL, GITHUB, LINKEDIN, TWITTER } from "@/content/constants";
-import ExternalLink from "../external-link";
 import styles from "./footer.module.css";
 
 const ICON_SIZE = "1.2rem";
@@ -18,6 +18,7 @@ export default function Footer() {
         </p>
         <a href={`mailto:${EMAIL}`}>{EMAIL}</a>
       </div>
+
       <div className={styles.footerRow}>
         <p>© designed & built by Michelle Lau</p>
         <div className={styles.social}>
