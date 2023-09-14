@@ -4,6 +4,7 @@
   border-radius: 1.5rem;
   display: flex;
   flex-direction: row;
+  transition-duration: 0.2s;
 }
 @media (max-width: 630px) {
   .card {
@@ -11,8 +12,7 @@
   }
 }
 .card:hover {
-  transform: rotateZ(1deg);
-  transition-duration: 0.1s;
+  transform: rotateZ(0.5deg) scale(1.02);
 }
 
 .card img {

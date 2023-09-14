@@ -25,6 +25,10 @@
   text-decoration-color: var(--shadow);
   text-underline-offset: 0.5rem;
 }
+.contact a:hover {
+  text-decoration-thickness: 5px;
+  text-underline-offset: 0.4rem;
+}
 
 .footerRow {
   max-width: var(--content-width);
