@@ -1,25 +1,29 @@
 .container {
+  width: 100%;
   margin: 0 auto;
-}
-
-.imageWrapper {
-  width: 350px;
-  min-width: 100%;
-  min-height: 350px;
-  height: fit-content;
-  position: relative;
 }
 
 .image {
   border-radius: 30px;
   object-fit: cover;
+  height: auto;
+  width: 100%;
 }
 
 .textWrapper {
   padding-top: 1rem;
-  width: 80%;
+  max-width: 300px;
 }
 
 .textWrapper p {
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .textWrapper {
+    max-width: initial;
+  }
+  .textWrapper p {
+    font-size: 1.3rem;
+  }
 }

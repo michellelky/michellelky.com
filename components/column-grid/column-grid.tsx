@@ -28,12 +28,17 @@ export default function ColumnGrid({ data }: Props) {
   return (
     <div className={styles.grid}>
       <div className={styles.col}>
-        {filterList.left.map((item) => (
-          <Card key={item.image} caption={item.text} image={item.image} />
+        {filterList.left?.map((item, i) => (
+          <Card
+            key={item.image}
+            caption={item.text}
+            image={item.image}
+            isFirst={i === 0}
+          />
         ))}
       </div>
       <div className={styles.col}>
-        {filterList.right.map((item) => (
+        {filterList.right?.map((item) => (
           <Card key={item.image} caption={item.text} image={item.image} />
         ))}
       </div>

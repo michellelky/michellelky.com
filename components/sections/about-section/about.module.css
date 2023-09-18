@@ -10,6 +10,12 @@
   margin: 0 auto;
 }
 
+.avatar {
+  width: auto;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
 .textWrapper {
   color: var(--text-primary);
 }

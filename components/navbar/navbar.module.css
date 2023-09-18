@@ -27,7 +27,7 @@
   font-weight: 600;
   font-size: 0.9rem;
   border-radius: 32px;
-  padding: 5px 1rem;
+  padding: 2px 1rem;
 }
 @media (max-width: 1280px) {
   .menu a {

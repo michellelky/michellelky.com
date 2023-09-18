@@ -6,9 +6,9 @@
   flex-direction: row;
   transition-duration: 0.2s;
 }
-@media (max-width: 630px) {
+@media (max-width: 768px) {
   .card {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 .card:hover {
@@ -17,18 +17,24 @@
 
 .card img {
   border-radius: inherit;
-  width: 25vw;
-  height: 100%;
   object-fit: cover;
+  width: 100%;
+  height: auto;
 }
-@media (max-width: 630px) {
+@media (min-width: 900px) {
   .card img {
-    width: 100%;
+    max-width: 500px;
+    height: auto;
   }
 }
 
 .textWrapper {
   padding: 2.5rem 2rem;
+}
+@media (max-width: 768px) {
+  .textWrapper {
+    padding: 2rem 1.5rem;
+  }
 }
 
 .cardTitle {
@@ -41,4 +47,5 @@
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  max-width: 400px;
 }

@@ -1,16 +1,22 @@
 .container {
   background-color: var(--bg-primary);
-  padding: 3rem 1rem;
   min-height: 60vh;
   max-width: var(--content-width);
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 3rem 0;
   margin: 0 auto;
+}
+@media (max-width: 1000px) {
+  .container {
+    padding: 3rem 1rem;
+  }
 }
 
 .projectContainer {
-  padding: 5rem 0;
+  width: 100%;
+  margin: 5rem 0;
 }
 
 .title {

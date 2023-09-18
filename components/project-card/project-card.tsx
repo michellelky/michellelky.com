@@ -31,6 +31,7 @@ export default function ProjectCard({
             alt={name}
             width={600}
             height={600}
+            sizes="(max-width: 768px) 100vw,  500px"
           />
         )}
 

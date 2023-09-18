@@ -10,14 +10,11 @@ export default function AboutSection() {
       <Image
         src={MyPic}
         alt="Michlle Lau's picture"
-        width={500}
-        height={350}
+        width={400}
+        height={400}
         quality={50}
         placeholder="blur"
-        style={{
-          objectFit: "cover",
-          borderRadius: 30,
-        }}
+        className={styles.avatar}
       />
 
       <div className={styles.textWrapper}>

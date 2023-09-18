@@ -40,43 +40,42 @@
 
 .textWrapper {
   background-color: var(--accent);
-  padding: 1rem;
-  padding-bottom: 4rem;
+  padding: 0 1rem 4rem 1rem;
 }
 .textWrapper p {
   text-align: center;
-  font-size: 0.925rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  max-width: 600px;
+  max-width: 630px;
   margin: 0 auto;
 }
 @media (min-width: 1280px) {
   .textWrapper p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 }
 
 .projectContainer {
   background-color: var(--accent);
   min-height: 60vh;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 .projectGrid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2.5rem;
+  gap: 3rem;
   max-width: var(--content-width);
   margin: 0 auto;
 }
-@media (min-width: 630px) {
+@media (min-width: 768px) {
   .projectGrid {
     grid-template-columns: repeat(2, 1fr);
   }
   .projectGrid > div:nth-child(2) {
-    margin-top: 6rem;
+    margin-top: 10rem;
   }
   .projectGrid > div:nth-child(3) {
-    margin-top: -6rem;
+    margin-top: -10rem;
   }
 }

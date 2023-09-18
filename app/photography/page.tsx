@@ -17,6 +17,7 @@ export default function PhotoPage() {
             src="/images/photography/hochstrahlbrunnen.jpg"
             alt="feature photo"
             fill
+            priority
           />
         </div>
       </div>

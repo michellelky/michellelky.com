@@ -7,19 +7,22 @@ interface Props {
   image: any;
   alt?: string;
   caption?: string;
+  isFirst?: boolean;
 }
 
-export default function Card({ caption, image, alt }: Props) {
+export default function Card({ caption, image, alt, isFirst = false }: Props) {
   return (
     <div className={styles.container}>
-      <div className={styles.imageWrapper}>
-        <Image
-          src={image}
-          alt={alt || "feature"}
-          fill
-          className={styles.image}
-        />
-      </div>
+      <Image
+        src={image}
+        alt={alt || "feature"}
+        className={styles.image}
+        priority={isFirst}
+        width={800}
+        height={800}
+        sizes="(max-width: 768px) 100vw, 33vw"
+      />
+
       {!!caption && (
         <div className={styles.textWrapper}>
           <p>{caption}</p>
