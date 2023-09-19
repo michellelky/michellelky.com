@@ -13,24 +13,25 @@ interface Props {
 
 export default function SideProjectSection({ title, subtitle, data }: Props) {
   return (
-    <AnimateWrapper>
-      <section className={styles.container}>
+    <section className={styles.container}>
+      <AnimateWrapper>
         <h2 className={styles.title}>{title}</h2>
         {!!subtitle && <p className={styles.subtitle}>{subtitle}</p>}
+      </AnimateWrapper>
 
-        <div className={styles.projectContainer}>
-          {data.map((project) => (
+      <div className={styles.projectContainer}>
+        {data.map((project) => (
+          <AnimateWrapper key={project.slug}>
             <ProjectCard
-              key={project.slug}
               name={project.title}
               description={project.desc}
               to={`/projects/${project.slug}`}
               thumbnail={project.thumbnail}
               size="lg"
             />
-          ))}
-        </div>
-      </section>
-    </AnimateWrapper>
+          </AnimateWrapper>
+        ))}
+      </div>
+    </section>
   );
 }

@@ -1,5 +1,4 @@
 .image {
-  height: 100%;
   background-color: var(--color-gray-300);
   backdrop-filter: none;
   object-fit: cover;

@@ -56,10 +56,11 @@ a {
 .site-base {
   background-color: var(--bg-primary);
   padding-top: 4rem;
+  padding-bottom: 6rem;
 }
 
 .full-page {
-  min-height: 80vh;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
