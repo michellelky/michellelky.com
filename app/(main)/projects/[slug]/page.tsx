@@ -7,7 +7,7 @@ import AnimateWrapper from "@/components/animation";
 import Markdown from "@/components/markdown";
 import BannerImage from "@/components/banner-image";
 import Link from "@/components/external-link";
-import { loadMarkdown } from "@/helpers/file-helper";
+import { getMarkdownList, loadMarkdown } from "@/helpers/file-helper";
 import styles from "./project.module.css";
 
 type Props = {
@@ -40,6 +40,15 @@ export async function generateMetadata(
       images,
     },
   };
+}
+
+// Generate dynamic routes
+export async function generateStaticParams() {
+  const projects = await getMarkdownList();
+
+  return projects.map((project) => ({
+    slug: project.slug,
+  }));
 }
 
 async function ProjectDetail({ params }: any) {
