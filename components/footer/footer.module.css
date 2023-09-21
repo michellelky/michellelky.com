@@ -1,8 +1,8 @@
 .footer {
   background-color: var(--bg-main);
   color: var(--text-main);
+  padding: 3rem 1rem;
   position: relative;
-  padding: 4rem 1rem 3rem;
 }
 
 .contact {
@@ -55,12 +55,17 @@
   margin-left: 2rem;
 }
 
-.waveImg {
+.waveWrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.wave {
   background-image: url(/images/desert/footer-wave.svg);
   background-repeat: repeat-x;
-  width: 100%;
+  width: 200%;
   height: 100px;
   position: absolute;
-  top: -2rem;
+  top: -24px;
   left: 0;
 }

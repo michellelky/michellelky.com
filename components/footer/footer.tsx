@@ -10,6 +10,10 @@ const ICON_SIZE = "1.2rem";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
+      <div className={styles.waveWrapper}>
+        <div className={styles.wave} />
+      </div>
+
       <div className={styles.contact}>
         <h2 className={styles.contactTitle}>Let’s build something together</h2>
         <p className={styles.contactBody}>
@@ -33,8 +37,6 @@ export default function Footer() {
           </ExternalLink>
         </div>
       </div>
-
-      <div className={styles.waveImg} />
     </footer>
   );
 }
