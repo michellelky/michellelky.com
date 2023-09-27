@@ -40,9 +40,7 @@ export default function MainRootLayout({
     <html lang="en" data-color-theme={theme}>
       <body className={`${poppins.className} ${theme}`}>
         <NavBar />
-        <main className="site-base">
-          {React.cloneElement(children, { initialTheme: theme })}
-        </main>
+        <main className="site-base">{children}</main>
         <Footer initialTheme={theme} />
       </body>
     </html>

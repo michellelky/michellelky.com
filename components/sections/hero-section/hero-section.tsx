@@ -7,10 +7,9 @@ import styles from "./hero-section.module.css";
 interface Props {
   title: string;
   subtitle: string;
-  initialTheme: string;
 }
 
-export default function HeroSection({ title, subtitle, initialTheme }: Props) {
+export default function HeroSection({ title, subtitle }: Props) {
   const [scrollY, setScrollY] = React.useState(0);
 
   const getYPos = (speed: number) => {
