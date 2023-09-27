@@ -66,13 +66,13 @@ export default function Footer({ initialTheme }: { initialTheme: string }) {
           </div>
         </div>
 
-        <button className={styles.control} onClick={handleToggleTheme}>
-          {theme === "light" ? (
-            <FiSun size={ICON_SIZE} />
-          ) : (
-            <FiMoon size={ICON_SIZE} />
-          )}
-        </button>
+          <button className={styles.control} onClick={handleToggleTheme}>
+            {theme === "light" ? (
+              <FiSun size={ICON_SIZE} />
+            ) : (
+              <FiMoon size={ICON_SIZE} />
+            )}
+          </button>
       </div>
     </footer>
   );
