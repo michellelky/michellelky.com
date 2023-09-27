@@ -1,11 +1,13 @@
+import React from "react";
 import type { Metadata } from "next";
+import { cookies } from "next/headers";
 
 import "@/styles/reset.css";
 import "@/styles/globals.css";
 import { poppins } from "@/styles/fonts";
 import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
-import { BASE_URL } from '@/content/constants';
+import { BASE_URL, USER_THEME } from "@/content/constants";
 
 const title = "Michelle Lau - Frontend Developer";
 const description = "Portfolio of Michelle Lau - Frontend Developer";
@@ -29,14 +31,19 @@ export const metadata: Metadata = {
 export default function MainRootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactElement;
 }) {
+  const userTheme = cookies().get(USER_THEME);
+  const theme = userTheme?.value || "light";
+
   return (
-    <html lang="en">
-      <body className={`${poppins.className} light`}>
+    <html lang="en" data-color-theme={theme}>
+      <body className={`${poppins.className} ${theme}`}>
         <NavBar />
-        <main className="site-base">{children}</main>
-        <Footer />
+        <main className="site-base">
+          {React.cloneElement(children, { initialTheme: theme })}
+        </main>
+        <Footer initialTheme={theme} />
       </body>
     </html>
   );

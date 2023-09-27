@@ -50,23 +50,33 @@
   background-size: contain;
   width: 100%;
   height: 100%;
+  transition: 200ms;
 }
 
 #dune {
   z-index: 6;
   bottom: -0.5%;
-  background-image: url(/images/desert/dune-main-low.svg);
+  background-image: url(/images/desert/dune-main.svg);
   background-repeat: no-repeat;
+}
+[data-color-theme="dark"] #dune {
+  background-image: url(/images/desert/dune-main-dk.svg);
 }
 
 #mountain1 {
   background-image: url(/images/desert/mountain-flat.svg);
   z-index: 5;
 }
+[data-color-theme="dark"] #mountain1 {
+  background-image: url(/images/desert/mountain-flat-dk.svg);
+}
 
 #mountain2 {
   background-image: url(/images/desert/mountain-peak.svg);
   z-index: 4;
+}
+[data-color-theme="dark"] #mountain2 {
+  background-image: url(/images/desert/mountain-peak-dk.svg);
 }
 
 .sunImg {

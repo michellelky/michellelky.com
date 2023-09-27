@@ -7,15 +7,16 @@ import styles from "./hero-section.module.css";
 interface Props {
   title: string;
   subtitle: string;
+  initialTheme: string;
 }
 
-export default function HeroSection({ title, subtitle }: Props) {
+export default function HeroSection({ title, subtitle, initialTheme }: Props) {
   const [scrollY, setScrollY] = React.useState(0);
 
   const getYPos = (speed: number) => {
     if (typeof window !== "undefined") {
       if (window.innerWidth < 700) {
-        return;
+        return 0;
       }
     }
     return -((scrollY * speed) / 100);
@@ -38,10 +39,10 @@ export default function HeroSection({ title, subtitle }: Props) {
 
   return (
     <section className={styles.container}>
-        <div className={styles.hero}>
-          <h1 className={styles.heroTitle}>{title}</h1>
-          <p className={styles.heroSubtitle}>{subtitle}</p>
-        </div>
+      <div className={styles.hero}>
+        <h1 className={styles.heroTitle}>{title}</h1>
+        <p className={styles.heroSubtitle}>{subtitle}</p>
+      </div>
 
       <div
         className={styles.sunImg}
@@ -56,12 +57,16 @@ export default function HeroSection({ title, subtitle }: Props) {
       <div
         className={styles.sandImg}
         id={styles.mountain2}
-        style={{ transform: `translateY(${getYPos(10)}px)` }}
+        style={{
+          transform: `translateY(${getYPos(10)}px)`,
+        }}
       />
       <div
         className={styles.sandImg}
         id={styles.mountain1}
-        style={{ transform: `translateY(${getYPos(15)}px)` }}
+        style={{
+          transform: `translateY(${getYPos(15)}px)`,
+        }}
       />
       <div className={styles.sandImg} id={styles.dune} />
     </section>

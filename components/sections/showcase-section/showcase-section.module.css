@@ -1,6 +1,6 @@
 .circleTop {
   /* matching hero bg */
-  background-color: var(--color-brown);
+  background-color: var(--bg-accent-back);
   position: relative;
   overflow: hidden;
   height: 30vw;

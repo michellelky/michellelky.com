@@ -22,7 +22,7 @@ export type ProjectMD = {
   order: number;
 };
 
-async function Home() {
+async function Home({ initialTheme }: { initialTheme: string }) {
   const projects = await getMarkdownList();
 
   const allProjects = projects.reduce(
@@ -44,6 +44,7 @@ async function Home() {
       <HeroSection
         title="Hi. I'm Michelle."
         subtitle="I build stuff on web and mobile."
+        initialTheme={initialTheme}
       />
       <ShowcaseSection data={allProjects.work} />
       <SideProjectSection title="Some fun stuff." data={allProjects.side} />
