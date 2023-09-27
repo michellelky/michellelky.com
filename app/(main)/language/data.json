@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Italian",
+    "bgColor": "#6FA905"
+  },
+  {
+    "name": "French",
+    "bgColor": "#41659B",
+    "textColor": "#FFFFFF"
+  },
+  {
+    "name": "Spanish",
+    "bgColor": "#E27A1A",
+    "textColor": "#FFFFFF"
+  }
+]

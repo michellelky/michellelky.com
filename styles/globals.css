@@ -71,6 +71,7 @@ a {
 
 .full-page {
   min-height: 90vh;
+  max-width: var(--content-width);
   display: flex;
   flex-direction: column;
   align-items: center;

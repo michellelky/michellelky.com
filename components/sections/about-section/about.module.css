@@ -4,7 +4,6 @@
   grid-template-columns: 2fr 3fr;
   gap: 3rem;
   justify-items: center;
-  max-width: var(--content-width);
   height: 100%;
   padding: 4rem 1rem;
   margin: 0 auto;
