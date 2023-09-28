@@ -4,8 +4,6 @@ Personal website built with [Next.js](https://nextjs.org/).
 
 ## Getting Started
 
-First, 
-
 1. Install dependencies
 
 ```bash
@@ -20,18 +18,31 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-
 ## Structure
 
-- Home
-- Photography
-- Language
-- Blog
-- About
+- (main)
+  - / (Dev work)
+  - /language (Language learning)
+  - /about
+  - /blog (TODO)
+- /photography (TODO)
+
+## Issues
+
+Production build on Vercel suddenly stopped working as the `content` folder cannot be found.
+
+```
+[Error: ENOENT: no such file or directory, scandir '/var/task/content/projects'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'scandir',
+  path: '/var/task/content/projects'
+}
+```
+
+- [Next.js API routes (and pages) should support reading files #8251](https://github.com/vercel/next.js/issues/8251)
 
 
-## TODO
+## Credits
 
-Dark mode
+See [./CREDITS](./CREDITS.md) for full list.
