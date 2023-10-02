@@ -3,15 +3,16 @@ import path from "path";
 import matter from "gray-matter";
 import React from "react";
 
-const projectPath = "/content/projects";
+const contentDir = "content";
+const projectDir = "projects";
 
 export async function getMarkdownList() {
-  const fileNames = await readDirectory(projectPath);
+  const fileNames = await readDirectory(projectDir);
 
   const markdowns: any[] = [];
 
   for (let fileName of fileNames) {
-    const rawContent = await readFile(`${projectPath}/${fileName}`);
+    const rawContent = await readFile(`${projectDir}/${fileName}`);
 
     const { data: frontmatter } = matter(rawContent);
 
@@ -27,7 +28,7 @@ export async function getMarkdownList() {
 export const loadMarkdown = React.cache(async function loadMarkdown(
   slug: string,
 ) {
-  const rawContent = await readFile(`${projectPath}/${slug}.mdx`);
+  const rawContent = await readFile(`${projectDir}/${slug}.mdx`);
 
   const { data: frontmatter, content } = matter(rawContent);
 
@@ -35,9 +36,9 @@ export const loadMarkdown = React.cache(async function loadMarkdown(
 });
 
 function readFile(localPath: string) {
-  return fs.readFile(path.join(process.cwd(), localPath), "utf8");
+  return fs.readFile(path.join(process.cwd(), contentDir, localPath), "utf8");
 }
 
 function readDirectory(localPath: string) {
-  return fs.readdir(path.join(process.cwd(), localPath));
+  return fs.readdir(path.join(process.cwd(), contentDir, localPath));
 }
