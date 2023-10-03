@@ -1,0 +1,98 @@
+{
+  "title": "Italian",
+  "original": "Italiano",
+  "theme": {
+    "bgColor": "#6FA905",
+    "textColor": "#FFFFFF"
+  },
+  "resources": [
+    {
+      "name": "YouTube",
+      "content": [
+        {
+          "name": "Learn Italian with Lucrezia",
+          "description": "Fun vlogs around Rome, grammar lessons, and many more",
+          "url": "https://www.youtube.com/@lucreziaoddone",
+          "thumbnail": "/images/lang/it/learn-italian-with-lucrezia.jpg"
+        },
+        {
+          "name": "Easy Italian",
+          "description": "Every episode Katie and Matteo do street interviews and ask what the Italians think about a certain topic",
+          "url": "https://www.youtube.com/@EasyItalian",
+          "thumbnail": "/images/lang/it/easy-italian.jpg"
+        },
+        {
+          "name": "Italian Automatico",
+          "description": "Learn with Alberto and nonna!",
+          "url": "https://www.youtube.com/@italianoautomatico",
+          "thumbnail": "/images/lang/it/italianoautomatico.jpeg"
+        },
+        {
+          "name": "Cucina Botanica",
+          "description": "Cook vegan dishes with Carlotta",
+          "url": "https://www.youtube.com/@CucinaBotanica",
+          "thumbnail": "/images/lang/it/cucina-botanica.jpeg"
+        }
+      ]
+    },
+    {
+      "name": "Podcast",
+      "content": [
+        {
+          "name": "Podcast Italiano",
+          "description": "Davide talks about Italian language, culture, history, society... You definitely learn a lot!",
+          "url": "https://open.spotify.com/show/1y4WrXQPfvoBCyWZBx5vFi",
+          "thumbnail": "/images/lang/it/podcast-italiano.jpeg"
+        },
+        {
+          "name": "Coffee Break Italian",
+          "description": "In different seasons of the show, the hosts take you through travel diaries, street interview, conversations about everything",
+          "url": "https://open.spotify.com/show/2PdBXXDEbSyR8fyd6RL5dR",
+          "thumbnail": "/images/lang/it/coffeebreak-italian.jpeg"
+        },
+        {
+          "name": "The Teacher Stefano Show",
+          "description": "Short and interactive lesson with Teacher Stefano",
+          "url": "https://open.spotify.com/show/36VtVtawGis9YJxdvihYPM?si=5c6a7450a7ac4be8",
+          "thumbnail": "/images/lang/it/teacher-stefano.jpeg"
+        },
+        {
+          "name": "Speak Italiano - Pensieri e Parole",
+          "description": "",
+          "url": "https://open.spotify.com/show/7w3iI1t0mdEFJRAIqvfCsG",
+          "thumbnail": "/images/lang/it/speak-italiano.jpeg"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "content": [
+        {
+          "name": "What is the Festival di Sanremo in Italy? Italian Music Festival (Subs)",
+          "description": "",
+          "url": "https://youtu.be/5aLoGr1kutE?si=4vr8YHA3pcVxjQdh",
+          "thumbnail": "/images/lang/it/lucrezia-sanremo.jpeg"
+        },
+        {
+          "name": "Mahmood & BLANCO - Brividi - Italy 🇮🇹 - National Final Performance - Eurovision 2022",
+          "description": "",
+          "url": "https://youtu.be/4MgMhzfUmiA?si=pPSdc07b4dkavQtY",
+          "thumbnail": "/images/lang/it/brividi.jpeg"
+        },
+        {
+          "name": "Måneskin - Zitti E Buoni - Italy 🇮🇹 - Grand Final - Eurovision 2021",
+          "description": "",
+          "url": "https://youtu.be/RVH5dn1cxAQ?si=qc-w94ySHtdIQBxK",
+          "thumbnail": "/images/lang/it/zitti-e-buoni.jpeg"
+        },
+        {
+          "name": "Ornella Vanoni - La musica è finita {live, SANREMO 1967}",
+          "description": "",
+          "url": "https://youtu.be/Sy6aw6FjzGg",
+          "thumbnail": "/images/lang/it/la-musica-e-finita-1967.jpeg"
+        }
+      ]
+    }
+  ],
+  "spotify": "https://open.spotify.com/embed/playlist/0a0lBERySJ847G1i7HITd4"
+}

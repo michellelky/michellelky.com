@@ -1,0 +1,49 @@
+.box {
+  border-radius: 20px;
+  min-height: 140px;
+  padding: 2rem 3rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: var(--bg-main);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.title {
+  color: var(--text-primary);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .featureText {
+    font-size: 2.5rem;
+    line-height: 1;
+    max-width: 60%;
+  }
+}
+
+.icon {
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  transition: transform 0.1s;
+}
+.box:hover .icon {
+  transform: rotateZ(-2deg) scale(1.05);
+}
+@media (max-width: 768px) {
+  .icon {
+    width: 60px;
+    height: min-content;
+  }
+}

@@ -1,0 +1,29 @@
+.container {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.title {
+  color: var(--text-primary);
+}
+
+.itemContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .itemContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .itemContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 375px) {
+  .itemContainer {
+    grid-template-columns: 1fr;
+  }
+}

@@ -51,7 +51,7 @@ export async function generateStaticParams() {
   }));
 }
 
-async function ProjectDetail({ params }: any) {
+async function ProjectDetail({ params }: { params: { slug: string } }) {
   const { frontmatter, content } = await loadMarkdown(params.slug);
 
   if (!frontmatter) {

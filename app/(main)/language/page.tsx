@@ -1,9 +1,9 @@
 import React from "react";
 import clsx from "clsx";
 
-import styles from "./language.module.css";
 import Block from "@/components/block";
-import LANGUAGE_LIST from "./data.json";
+import { getLanguageList } from "@/helpers/file-helper";
+import styles from "./language.module.css";
 
 const title = "Language Learning | Michelle Lau";
 const description = "My resources for language learning";
@@ -23,7 +23,11 @@ export const metadata = {
   },
 };
 
-export default function LanguagePage() {
+const BASE = "/language";
+
+async function LanguagePage() {
+  const languages = await getLanguageList();
+
   return (
     <div className={clsx("full-page", styles.container)}>
       <h1 className={styles.title}>Language Learning</h1>
@@ -31,7 +35,7 @@ export default function LanguagePage() {
         <div className={styles.outerGrid}>
           <Block
             title="How to learn"
-            to="/how-to-learn"
+            to={`${BASE}/how-to-learn`}
             bgColor="#f9d454"
             imgSrc="/images/icons/language-arts.png"
             size="md"
@@ -40,14 +44,14 @@ export default function LanguagePage() {
           <div className={styles.innerGrid}>
             <Block
               title="Useful tools"
-              to="/tools"
+              to={`${BASE}/tools`}
               bgColor="#0b5b6c"
               textColor="#fff"
               imgSrc="/images/icons/scout.png"
             />
             <Block
               title="Notes"
-              to="/notes"
+              to={`${BASE}/notes`}
               bgColor="#faa423"
               imgSrc="/images/icons/sketchbook.png"
             />
@@ -60,11 +64,11 @@ export default function LanguagePage() {
       </div>
       <div className={styles.gridContainer}>
         <div className={styles.innerGrid}>
-          {LANGUAGE_LIST.map((item) => (
+          {languages.map((item) => (
             <Block
-              key={item.name}
+              key={item.lang}
               title={item.name}
-              to={`/language/${item.name.toLowerCase()}`}
+              to={`${BASE}/${item.name.toLowerCase()}`}
               bgColor={item.bgColor}
               textColor={item.textColor}
               size="lg"
@@ -75,3 +79,5 @@ export default function LanguagePage() {
     </div>
   );
 }
+
+export default LanguagePage;

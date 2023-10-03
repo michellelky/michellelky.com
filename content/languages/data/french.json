@@ -1,0 +1,87 @@
+{
+  "title": "French",
+  "original": "Français",
+  "theme": {
+    "bgColor": "#41659B",
+    "textColor": "#FFFFFF"
+  },
+  "resources": [
+    {
+      "name": "YouTube",
+      "content": [
+        {
+          "name": "French mornings with Elisa",
+          "description": "Elisa shares lots of tips and lessons! Her bilingual newsletter is also great reading material.",
+          "url": "https://www.youtube.com/@FrenchmorningswithElisa",
+          "thumbnail": "/images/lang/fr/frenchmorningswithElisa.jpeg"
+        },
+        {
+          "name": "Easy French",
+          "description": "Watch Rita, Judith and Hélène do street interviews in France!",
+          "url": "https://www.youtube.com/@EasyFrench",
+          "thumbnail": "/images/lang/fr/easy-french.jpeg"
+        },
+        {
+          "name": "Piece of French",
+          "description": "Follow Elsa in her daily life and learn new vocabulary",
+          "url": "https://www.youtube.com/@pieceoffrench",
+          "thumbnail": "/images/lang/fr/piece-of-french.jpeg"
+        },
+        {
+          "name": "Cyprien",
+          "description": "Cyprien is a comedien and his videos are amazing!",
+          "url": "https://www.youtube.com/@cyprien",
+          "thumbnail": "/images/lang/fr/cyprien.jpeg"
+        }
+      ]
+    },
+    {
+      "name": "Podcast",
+      "content": [
+        {
+          "name": "Duolingo French Podcast",
+          "description": "",
+          "url": "https://podcast.duolingo.com/french",
+          "thumbnail": "/images/lang/fr/duo-french-podcast.jpeg"
+        },
+        {
+          "name": "Podcast Français Authentique",
+          "description": "",
+          "url": "https://open.spotify.com/show/0TEXfe7CY1EFAbEP9GXIRs",
+          "thumbnail": "/images/lang/fr/podcast-francais-authentique.jpeg"
+        },
+        {
+          "name": "Coffee Break French",
+          "description": "",
+          "url": "https://open.spotify.com/show/6YqgG1UezfW9khCvLh8rvw",
+          "thumbnail": "/images/lang/fr/coffeebreak-french.jpeg"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "content": [
+        {
+          "name": "30 FRENCH SONGS to Learn FRENCH",
+          "description": "Some great songs while learning French at the same time!",
+          "url": "https://youtu.be/hxldMxWqBbI?si=Mo1A0F7eYBs8aD3V",
+          "thumbnail": "/images/lang/fr/30-french-songs.jpeg"
+        },
+
+        {
+          "name": "La fête de la musique - Karambolage - ARTE",
+          "description": "Do you know this festial on the 21 June?",
+          "url": "https://youtu.be/aFrAUkM_cNE?si=xpkLI6a_Uawz8qvy",
+          "thumbnail": "/images/lang/fr/la-fete-de-la-musique.jpeg"
+        },
+        {
+          "name": "Barbara - L'aigle noir",
+          "description": "",
+          "url": "https://youtu.be/kDqtyruAd4Q?si=j90jCgPKT1Mqsa5x",
+          "thumbnail": "/images/lang/fr/laigle-noir.jpeg"
+        }
+      ]
+    }
+  ],
+  "spotify": "https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO4l9CIU"
+}
