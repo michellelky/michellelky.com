@@ -7,7 +7,7 @@ const contentDir = "content";
 const projectDir = "projects";
 const langDir = "languages";
 
-export async function getMarkdownList() {
+export async function getProjectList() {
   const fileNames = await readDirectory(projectDir);
 
   const markdowns: any[] = [];
@@ -28,8 +28,10 @@ export async function getMarkdownList() {
 
 export const loadMarkdown = React.cache(async function loadMarkdown(
   slug: string,
+  type: "project" | "language",
 ) {
-  const rawContent = await readFile(`${projectDir}/${slug}.mdx`);
+  const dir = type === "project" ? projectDir : langDir;
+  const rawContent = await readFile(`${dir}/${slug}.mdx`);
 
   const { data: frontmatter, content } = matter(rawContent);
 

@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import ColumnGrid from "@/components/column-grid";
 import CodeSnippet from "@/components/code-snippet";
+import ExternalLink from "@/components/external-link";
 import { OverviewBlock } from "./overview-block";
 import styles from "./markdown.module.css";
 
@@ -11,6 +12,7 @@ interface MarkdownProps {
 }
 
 const components = {
+  a: ExternalLink,
   img: ({ src, alt }: any) => {
     return (
       <div className={styles.imageWrapper}>

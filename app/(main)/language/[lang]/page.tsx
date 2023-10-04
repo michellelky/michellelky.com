@@ -2,10 +2,32 @@ import React from "react";
 import clsx from "clsx";
 
 import HeaderCard from "@/components/header-card";
-import SectionList from "@/components/sections/section-list/section-list";
+import SectionList from "@/components/section-list";
+import SectionCard from "@/components/section-card";
 import SpofifyEmbed from "@/components/spofify-embed";
 import { getLanguageList, loadLanguage } from "@/helpers/file-helper";
 import styles from "./lang.module.css";
+
+export async function generateMetadata({ params }: PageProps) {
+  const data = await loadLanguage(params.lang);
+
+  const combinedTitle = `${data.title} resources | Michelle Lau`;
+  const description = `My resources for learning ${data.title}`;
+
+  return {
+    title: combinedTitle,
+    description,
+    openGraph: {
+      title: combinedTitle,
+      description,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: combinedTitle,
+      description,
+    },
+  };
+}
 
 // Generate dynamic routes
 export async function generateStaticParams() {
@@ -33,10 +55,23 @@ async function ResourceByLanguage({ params }: PageProps) {
       />
 
       {data.resources.map((r: any) => (
-        <SectionList key={r.name} title={r.name} data={r.content} />
+        <SectionList
+          key={r.name}
+          title={r.name}
+          data={r.content}
+          renderItem={(item) => (
+            <SectionCard
+              key={item.name}
+              name={item.name}
+              description={item.description}
+              href={item.url}
+              thumbnail={item.thumbnail}
+            />
+          )}
+        />
       ))}
 
-      <SpofifyEmbed src={data.spotify} height={200} />
+      {data.spotify && <SpofifyEmbed src={data.spotify} height={200} />}
     </div>
   );
 }

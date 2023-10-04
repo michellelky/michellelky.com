@@ -1,6 +1,6 @@
 import React from "react";
 
-import Card from "@/components/card";
+import Card from "@/components/demo-card";
 import styles from "./column-grid.module.css";
 
 type GridItem = { image: string; text: string };

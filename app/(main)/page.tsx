@@ -3,7 +3,7 @@ import React from "react";
 import HeroSection from "@/components/sections/hero-section";
 import ShowcaseSection from "@/components/sections/showcase-section";
 import SideProjectSection from "@/components/sections/side-project-section";
-import { getMarkdownList } from "@/helpers/file-helper";
+import { getProjectList } from "@/helpers/file-helper";
 
 export type ProjectMD = {
   slug: string;
@@ -23,7 +23,7 @@ export type ProjectMD = {
 };
 
 async function Home() {
-  const projects = await getMarkdownList();
+  const projects = await getProjectList();
 
   const allProjects = projects.reduce(
     (

@@ -1,0 +1,49 @@
+{
+  "title": "Useful tools",
+  "theme": {
+    "bgColor": "#0b5b6c",
+    "textColor": "#FFFFFF"
+  },
+  "resources": [
+    {
+      "name": "Apps",
+      "content": [
+        {
+          "name": "Duolingo",
+          "description": "This one needs no introduction (Duo even made its way in the new Barbie movie!). A good starting point to pick up a new language, and offers the most resources for Spanish and French.",
+          "url": "https://www.duolingo.com/",
+          "thumbnail": "/images/lang/duo-app.webp"
+        },
+        {
+          "name": "Busuu",
+          "description": "While Busuu is not entirely free, it has a wide range of lessons categorized from CERF A1 to B2, and by topic like in traditional textbooks. My favorite feature is being able to have my writing corrected by the community.",
+          "url": "https://www.busuu.com/",
+          "thumbnail": "/images/lang/busuu.webp"
+        },
+        {
+          "name": "Clozemaster",
+          "description": "Clozemaster helps you build vocabulary by exercises like fill in the blanks.",
+          "url": "https://www.clozemaster.com/",
+          "thumbnail": "/images/lang/clozemaster.webp"
+        }
+      ]
+    },
+    {
+      "name": "Chrome Extensons",
+      "content": [
+        {
+          "name": "Language Reactor",
+          "description": "With Language Reactor, you can turn on dual subtitles on YouTube and Netflix! It also created catalogue to help you find videos by language, and many more features!",
+          "url": "https://chrome.google.com/webstore/detail/language-reactor/hoombieeljmmljlkjmnheibnpciblicm",
+          "thumbnail": "/images/lang/language-reactor.png"
+        },
+        {
+          "name": "Toucan by Babbel",
+          "description": "\"Learn a new language just by browsing the internet.\" - It turns some words on a page into your targeted language and I think it's great.",
+          "url": "https://chromewebstore.google.com/detail/toucan-by-babbel-language/lokjgaehpcnlmkebpmjiofccpklbmoci",
+          "thumbnail": "/images/lang/toucan.png"
+        }
+      ]
+    }
+  ]
+}

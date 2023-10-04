@@ -7,7 +7,7 @@ import AnimateWrapper from "@/components/animation";
 import Markdown from "@/components/markdown";
 import BannerImage from "@/components/banner-image";
 import Link from "@/components/external-link";
-import { getMarkdownList, loadMarkdown } from "@/helpers/file-helper";
+import { getProjectList, loadMarkdown } from "@/helpers/file-helper";
 import styles from "./project.module.css";
 
 type Props = {
@@ -18,7 +18,7 @@ export async function generateMetadata(
   { params }: Props,
   parent: ResolvingMetadata,
 ) {
-  const { frontmatter } = await loadMarkdown(params.slug);
+  const { frontmatter } = await loadMarkdown(params.slug, "project");
   const { title, description, banner } = frontmatter;
 
   const combinedTitle = `${title} | Michelle Lau`;
@@ -44,7 +44,7 @@ export async function generateMetadata(
 
 // Generate dynamic routes
 export async function generateStaticParams() {
-  const projects = await getMarkdownList();
+  const projects = await getProjectList();
 
   return projects.map((project) => ({
     slug: project.slug,
@@ -52,7 +52,7 @@ export async function generateStaticParams() {
 }
 
 async function ProjectDetail({ params }: { params: { slug: string } }) {
-  const { frontmatter, content } = await loadMarkdown(params.slug);
+  const { frontmatter, content } = await loadMarkdown(params.slug, "project");
 
   if (!frontmatter) {
     notFound();

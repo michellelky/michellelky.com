@@ -5,6 +5,7 @@ import Block from "@/components/block";
 import { getLanguageList } from "@/helpers/file-helper";
 import styles from "./language.module.css";
 
+const BASE = "/language";
 const title = "Language Learning | Michelle Lau";
 const description = "My resources for language learning";
 
@@ -22,8 +23,6 @@ export const metadata = {
     description,
   },
 };
-
-const BASE = "/language";
 
 async function LanguagePage() {
   const languages = await getLanguageList();
@@ -68,7 +67,7 @@ async function LanguagePage() {
             <Block
               key={item.lang}
               title={item.name}
-              to={`${BASE}/${item.name.toLowerCase()}`}
+              to={`${BASE}/${item.lang}`}
               bgColor={item.bgColor}
               textColor={item.textColor}
               size="lg"
