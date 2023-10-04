@@ -8,7 +8,7 @@ import { getMarkdownList } from "@/helpers/file-helper";
 export type ProjectMD = {
   slug: string;
   title: string;
-  desc: string;
+  description: string;
   type: string;
   technologies: string[];
   links?: {

@@ -24,7 +24,7 @@ export default function SideProjectSection({ title, subtitle, data }: Props) {
           <AnimateWrapper key={project.slug}>
             <ProjectCard
               name={project.title}
-              description={project.desc}
+              description={project.description}
               to={`/projects/${project.slug}`}
               thumbnail={project.thumbnail}
               size="lg"

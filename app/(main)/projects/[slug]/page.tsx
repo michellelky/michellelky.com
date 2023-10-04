@@ -19,7 +19,7 @@ export async function generateMetadata(
   parent: ResolvingMetadata,
 ) {
   const { frontmatter } = await loadMarkdown(params.slug);
-  const { title, desc, banner } = frontmatter;
+  const { title, description, banner } = frontmatter;
 
   const combinedTitle = `${title} | Michelle Lau`;
   const previousImages = (await parent).openGraph?.images || [];
@@ -27,16 +27,16 @@ export async function generateMetadata(
 
   return {
     title: combinedTitle,
-    description: desc,
+    description,
     openGraph: {
       title: combinedTitle,
-      description: desc,
+      description,
       images,
     },
     twitter: {
       card: "summary_large_image",
       title: combinedTitle,
-      description: desc,
+      description,
       images,
     },
   };
@@ -57,13 +57,14 @@ async function ProjectDetail({ params }: { params: { slug: string } }) {
   if (!frontmatter) {
     notFound();
   }
-  const { title, desc, banner, technologies, links, builtAt } = frontmatter;
+  const { title, description, banner, technologies, links, builtAt } =
+    frontmatter;
 
   return (
     <AnimateWrapper>
       <div className={styles.container}>
         <p className={styles.subtitle}>{title}</p>
-        <h1 className={styles.title}>{desc}</h1>
+        <h1 className={styles.title}>{description}</h1>
 
         <div className={styles.bannerWrapper}>
           <BannerImage src={`/images/projects/${banner}`} alt={title} />
