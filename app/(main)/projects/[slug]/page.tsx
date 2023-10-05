@@ -57,7 +57,7 @@ async function ProjectDetail({ params }: { params: { slug: string } }) {
   if (!frontmatter) {
     notFound();
   }
-  const { title, description, banner, technologies, links, builtAt } =
+  const { title, description, banner, technologies, links, builtAt, role } =
     frontmatter;
 
   return (
@@ -100,10 +100,14 @@ async function ProjectDetail({ params }: { params: { slug: string } }) {
         {builtAt && (
           <div className={styles.infoGrid}>
             <p className={styles.heading}>Built at</p>
-            <p>{builtAt}</p>
+            <p>
+              {builtAt}
+              {!!role && ` (${role})`}
+            </p>
           </div>
         )}
       </div>
+      a
     </AnimateWrapper>
   );
 }

@@ -1,10 +1,69 @@
 {
   "title": "Spanish",
-  "original": "Espagnol",
+  "original": "Español",
   "theme": {
     "bgColor": "#E27A1A",
     "textColor": "#FFFFFF"
   },
-  "resources": [],
-  "spotify": ""
+  "resources": [
+    {
+      "name": "YouTube",
+      "content": [
+        {
+          "name": "Easy Spanish",
+          "description": "Street interviews in Spanish",
+          "url": "https://www.youtube.com/@EasySpanish",
+          "thumbnail": "/images/lang/es/easy-spanish.jpeg"
+        },
+        {
+          "name": "Spanish After Hours",
+          "description": "Super fun videos, vlog and lessons!",
+          "url": "https://www.youtube.com/@spanishafterhours",
+          "thumbnail": "/images/lang/es/spanish-after-hours.jpeg"
+        },
+        {
+          "name": "FluentU Spanish",
+          "description": "This channel takes scenes from English movies and series and turn them into Spanish lessons",
+          "url": "https://www.youtube.com/@FluentUSpanish",
+          "thumbnail": "/images/lang/es/fluentu-spanish.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Podcast",
+      "content": [
+        {
+          "name": "Duolingo Spanish Podcast",
+          "description": "",
+          "url": "https://podcast.duolingo.com/spanish",
+          "thumbnail": "/images/lang/es/duo-spanish-podcast.jpeg"
+        },
+
+        {
+          "name": "Coffee Break Spanish",
+          "description": "",
+          "url": "https://open.spotify.com/show/4WYj81C37trSAv42zwnipj",
+          "thumbnail": "/images/lang/es/coffeebreak-spanish.jpeg"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "content": [
+        {
+          "name": "Natalia Lafourcade: NPR Music Tiny Desk Concert",
+          "description": "",
+          "url": "https://youtu.be/JODaYjDyjyQ?si=Fq8ExkdnkGmnNDSq",
+          "thumbnail": "/images/lang/es/natalia-lafourcade-npr.webp"
+        },
+        {
+          "name": "Alvaro Soler - El Mismo Sol",
+          "description": "",
+          "url": "https://youtu.be/aNHwNreDp3A?si=pyDbj1AuiV-qLaMR",
+          "thumbnail": "/images/lang/es/el-mismo-sol.webp"
+        }
+      ]
+    }
+  ],
+  "spotify": "https://open.spotify.com/embed/playlist/5eYlOwd3d4DLaQtiNfWhDX"
 }

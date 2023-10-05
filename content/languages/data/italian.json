@@ -32,6 +32,12 @@
           "description": "Cook vegan dishes with Carlotta",
           "url": "https://www.youtube.com/@CucinaBotanica",
           "thumbnail": "/images/lang/it/cucina-botanica.jpeg"
+        },
+        {
+          "name": "Piazzasquare italiano",
+          "description": "Explore Italian culture, interviews, and more",
+          "url": "https://www.youtube.com/@piazzasquare",
+          "thumbnail": "/images/lang/it/piazzasquare.jpeg"
         }
       ]
     },

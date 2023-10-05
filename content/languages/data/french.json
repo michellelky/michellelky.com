@@ -28,8 +28,14 @@
           "thumbnail": "/images/lang/fr/piece-of-french.jpeg"
         },
         {
+          "name": "innerFrench",
+          "description": "It is more for intermediate learners but amazing content",
+          "url": "https://www.youtube.com/@innerFrench",
+          "thumbnail": "/images/lang/fr/innerfrench.jpeg"
+        },
+        {
           "name": "Cyprien",
-          "description": "Cyprien is a comedien and his videos are amazing!",
+          "description": "Cyprien is a comedien and his videos are amazing",
           "url": "https://www.youtube.com/@cyprien",
           "thumbnail": "/images/lang/fr/cyprien.jpeg"
         }
@@ -51,6 +57,12 @@
           "thumbnail": "/images/lang/fr/podcast-francais-authentique.jpeg"
         },
         {
+          "name": "The Naked French Podcast",
+          "description": "",
+          "url": "https://open.spotify.com/show/3T1UgPSPIKa60nPuCcrweE",
+          "thumbnail": "/images/lang/fr/naked-french.jpeg"
+        },
+        {
           "name": "Coffee Break French",
           "description": "",
           "url": "https://open.spotify.com/show/6YqgG1UezfW9khCvLh8rvw",
@@ -70,7 +82,7 @@
 
         {
           "name": "La fête de la musique - Karambolage - ARTE",
-          "description": "Do you know this festial on the 21 June?",
+          "description": "Do you know this festival on the 21 June?",
           "url": "https://youtu.be/aFrAUkM_cNE?si=xpkLI6a_Uawz8qvy",
           "thumbnail": "/images/lang/fr/la-fete-de-la-musique.jpeg"
         },

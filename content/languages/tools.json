@@ -10,19 +10,25 @@
       "content": [
         {
           "name": "Duolingo",
-          "description": "This one needs no introduction (Duo even made its way in the new Barbie movie!). A good starting point to pick up a new language, and offers the most resources for Spanish and French.",
+          "description": "This one needs no introduction (Duo even made its way in the new Barbie movie!). A good starting point to pick up a new language.",
           "url": "https://www.duolingo.com/",
           "thumbnail": "/images/lang/duo-app.webp"
         },
         {
           "name": "Busuu",
-          "description": "While Busuu is not entirely free, it has a wide range of lessons categorized from CERF A1 to B2, and by topic like in traditional textbooks. My favorite feature is being able to have my writing corrected by the community.",
+          "description": "While Busuu is not entirely free, it has a wide range of lessons categorized from CERF A1 to B2. My favorite feature is being able to have my writing corrected by the community.",
           "url": "https://www.busuu.com/",
           "thumbnail": "/images/lang/busuu.webp"
         },
         {
+          "name": "Memrise",
+          "description": "Free course for everything and all levels. I love they have videos with real people speaking.",
+          "url": "https://www.memrise.com/",
+          "thumbnail": "/images/lang/memrise.webp"
+        },
+        {
           "name": "Clozemaster",
-          "description": "Clozemaster helps you build vocabulary by exercises like fill in the blanks.",
+          "description": "Clozemaster helps you build vocabulary by exercises like fill in the blanks. A supplementary after some learning.",
           "url": "https://www.clozemaster.com/",
           "thumbnail": "/images/lang/clozemaster.webp"
         }
