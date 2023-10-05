@@ -1,0 +1,10 @@
+.container {
+  justify-content: flex-start;
+  align-items: start;
+  max-width: 800px;
+  padding: 4rem var(--viewport-padding);
+}
+
+.wrapper {
+  padding-top: 3rem;
+}

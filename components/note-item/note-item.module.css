@@ -1,0 +1,52 @@
+.container {
+  background: var(--bg-card);
+  border-radius: 12px;
+  border: 2px solid var(--color-gray-300);
+  cursor: pointer;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 425px) {
+  .container {
+    padding: 1rem 2rem;
+  }
+}
+
+.header {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.highlight {
+  animation: slideIn 500ms;
+}
+
+.highlightWrapper {
+  border-top: 2px dashed var(--color-gray-300);
+  padding-top: 1rem;
+  margin-top: 1rem;
+  transition: 0.3s;
+}
+
+.body {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+}
+
+.category {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}

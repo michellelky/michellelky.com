@@ -4,7 +4,7 @@ import clsx from "clsx";
 import HeaderCard from "@/components/header-card";
 import SectionList from "@/components/section-list";
 import HorizontalCard from "@/components/horizontal-card";
-import DATA from "@/content/languages/tools.json";
+import data from "@/content/languages/tools.json";
 import styles from "./tools.module.css";
 
 const title = "Useful tools | Michelle Lau";
@@ -25,9 +25,7 @@ export const metadata = {
   },
 };
 
-async function ToolPage() {
-  const data = DATA;
-
+export default function ToolPage() {
   return (
     <div className={clsx("full-page", styles.container)}>
       <HeaderCard
@@ -56,5 +54,3 @@ async function ToolPage() {
     </div>
   );
 }
-
-export default ToolPage;

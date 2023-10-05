@@ -1,0 +1,33 @@
+{
+  "title": "Notes",
+  "theme": {
+    "bgColor": "#faa423",
+    "textColor": "#000000"
+  },
+  "data": [
+    {
+      "title": "Úrsula Corberó's last day on set | Money Heist: Part 5 | Netflix",
+      "content": "Hoy termina algo hermoso y emoconante, pero es el primer día de tu siguiente vida. Y nosotros, que te queremos, te deseamos muchas vidas. Gracias por estos años, Úrsula, y suerte en las carreras que están por venir.",
+      "translation": "Today's the end of a beautiful and exciting thing, but it's the first day of your next life. We love you and wish you many more lives. Thank you for these years, Úrsula, and best of luck on the road ahead.",
+      "source": "https://youtu.be/GLbnPXXB4H4",
+      "tags": ["spanish"],
+      "createdAt": "2023-10-05"
+    },
+    {
+      "title": "Vento sulla luna - Annalisa, Rkomi",
+      "content": "Il mondo sembra correre via come un taxi in un giorno di pioggia",
+      "translation": "The world seems to be running away like a taxi on a rainy day",
+      "source": null,
+      "tags": ["italian"],
+      "createdAt": "2023-10-02"
+    },
+    {
+      "title": "Direzione la vita - Annalisa",
+      "content": "C'è un lunedì che è meglio di un sabato sera",
+      "translation": "There is a Monday that's better than a Saturday night",
+      "source": null,
+      "tags": ["italian"],
+      "createdAt": "2023-10-01"
+    }
+  ]
+}
