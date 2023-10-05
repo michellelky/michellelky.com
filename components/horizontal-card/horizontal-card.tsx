@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import ExternalLink from "@/components/external-link";
+import { greyDataURL } from "@/helpers/image-placeholder";
 import styles from "./horizontal-card.module.css";
 
 interface Props {
@@ -31,6 +32,7 @@ export default function HorizontalCard({
           priority={isFirst}
           width={150}
           height={150}
+          blurDataURL={greyDataURL()}
         />
 
         <div className={styles.textWrapper}>

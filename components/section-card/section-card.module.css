@@ -34,10 +34,6 @@
   color: var(--text-secondary);
   font-size: 0.9rem;
   line-height: 1.2;
-  margin-top: 0.5rem;
   -webkit-line-clamp: 3;
-}
-.body:hover {
-  display: block;
-  transition: 200ms;
+  margin-top: 0.5rem;
 }
