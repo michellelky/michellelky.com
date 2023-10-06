@@ -4,7 +4,7 @@ import clsx from "clsx";
 import HeaderCard from "@/components/header-card";
 import SectionList from "@/components/section-list";
 import SectionCard from "@/components/section-card";
-import SpofifyEmbed from "@/components/spofify-embed";
+import IFrameEmbed from "@/components/iframe-embed";
 import { getLanguageList, loadLanguage } from "@/helpers/file-helper";
 import styles from "./lang.module.css";
 
@@ -71,7 +71,7 @@ async function ResourceByLanguage({ params }: PageProps) {
         />
       ))}
 
-      {data.spotify && <SpofifyEmbed src={data.spotify} height={200} />}
+      {data.spotify && <IFrameEmbed src={data.spotify} type="spotify" />}
     </div>
   );
 }

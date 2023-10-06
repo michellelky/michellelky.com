@@ -4,6 +4,7 @@ import Image from "next/image";
 import ColumnGrid from "@/components/column-grid";
 import CodeSnippet from "@/components/code-snippet";
 import ExternalLink from "@/components/external-link";
+import IFrameEmbed from "@/components/iframe-embed";
 import { OverviewBlock } from "./overview-block";
 import styles from "./markdown.module.css";
 
@@ -23,6 +24,7 @@ const components = {
   pre: CodeSnippet,
   ColumnGrid,
   OverviewBlock,
+  IFrameEmbed,
 };
 
 export default function Markdown({ source }: MarkdownProps) {
