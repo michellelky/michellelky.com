@@ -5,12 +5,14 @@ interface Props {
   children?: any;
   className?: string;
   title?: string;
+  ariaLabel?: string;
 }
 export default function ExternalLink({
   href,
   children,
   className,
   title,
+  ariaLabel,
 }: Props) {
   return (
     <a
@@ -19,6 +21,7 @@ export default function ExternalLink({
       rel="noreferrer noopener"
       className={className}
       title={title}
+      aria-label={ariaLabel}
     >
       {children}
     </a>

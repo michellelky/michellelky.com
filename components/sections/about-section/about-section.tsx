@@ -25,7 +25,7 @@ export default function AboutSection() {
           {`A few years ago, I became interested in web development - learning from tutorials online and eventually joined a coding bootcamp. Working in a small startup, I took up the role for a range of tasks from designing the UI, building with frontend frameworks like React, to setting up Node backend.`}
         </p>
         <p>
-          {`When I’m not coding, I like to take photos, learn new languages and bake (dessert ❤️).`}
+          {`In my free time, I like to take photos, learn new languages and bake (dessert ❤️).`}
         </p>
       </div>
     </section>

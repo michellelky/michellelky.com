@@ -54,25 +54,29 @@ export default function Footer({ initialTheme }: { initialTheme: string }) {
           <p>© designed & built by Michelle Lau</p>
 
           <div className={styles.social}>
-            <ExternalLink href={TWITTER}>
+            <ExternalLink href={TWITTER} ariaLabel="Twitter">
               <FiTwitter size={ICON_SIZE} />
             </ExternalLink>
-            <ExternalLink href={GITHUB}>
+            <ExternalLink href={GITHUB} ariaLabel="GitHub">
               <FiGithub size={ICON_SIZE} />
             </ExternalLink>
-            <ExternalLink href={LINKEDIN}>
+            <ExternalLink href={LINKEDIN} ariaLabel="LinkedIn">
               <FiLinkedin size={ICON_SIZE} />
             </ExternalLink>
           </div>
         </div>
 
-          <button className={styles.control} onClick={handleToggleTheme}>
-            {theme === "light" ? (
-              <FiSun size={ICON_SIZE} />
-            ) : (
-              <FiMoon size={ICON_SIZE} />
-            )}
-          </button>
+        <button
+          className={styles.control}
+          onClick={handleToggleTheme}
+          aria-label="Toggle theme"
+        >
+          {theme === "light" ? (
+            <FiSun size={ICON_SIZE} />
+          ) : (
+            <FiMoon size={ICON_SIZE} />
+          )}
+        </button>
       </div>
     </footer>
   );
