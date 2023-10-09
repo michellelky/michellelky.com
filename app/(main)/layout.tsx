@@ -1,6 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import { cookies } from "next/headers";
+import { Analytics } from "@vercel/analytics/react";
 
 import "@/styles/reset.css";
 import "@/styles/globals.css";
@@ -42,6 +43,7 @@ export default function MainRootLayout({
         <NavBar />
         <main className="site-base">{children}</main>
         <Footer initialTheme={theme} />
+        <Analytics />
       </body>
     </html>
   );
