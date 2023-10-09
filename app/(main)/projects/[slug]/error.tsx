@@ -4,10 +4,6 @@ import { useEffect } from "react";
 
 import ErrorBlock from "@/components/error-block";
 
-export const metadata = {
-  title: "404: Not Found",
-};
-
 export default function Error({
   error,
 }: {

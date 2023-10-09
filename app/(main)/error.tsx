@@ -4,10 +4,10 @@ import React from "react";
 
 import ErrorBlock from "@/components/error-block";
 
-export default function NotFound() {
+export default function Error() {
   return (
     <div className="full-page">
-      <ErrorBlock title="Not Found" message="Oops... there's nothing here" />
+      <ErrorBlock title="Oops." message="Something went wrong" />
     </div>
   );
 }
