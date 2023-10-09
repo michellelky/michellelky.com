@@ -13,7 +13,11 @@ interface MarkdownProps {
 }
 
 const components = {
-  a: ExternalLink,
+  a: ({ children, ...props }: any) => (
+    <ExternalLink showIcon {...props}>
+      {children}
+    </ExternalLink>
+  ),
   img: ({ src, alt }: any) => {
     return (
       <div className={styles.imageWrapper}>

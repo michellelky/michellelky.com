@@ -1,4 +1,5 @@
 import React from "react";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 interface Props {
   href?: string | undefined;
@@ -6,6 +7,7 @@ interface Props {
   className?: string;
   title?: string;
   ariaLabel?: string;
+  showIcon?: boolean;
 }
 export default function ExternalLink({
   href,
@@ -13,6 +15,7 @@ export default function ExternalLink({
   className,
   title,
   ariaLabel,
+  showIcon,
 }: Props) {
   return (
     <a
@@ -24,6 +27,11 @@ export default function ExternalLink({
       aria-label={ariaLabel}
     >
       {children}
+      {showIcon && (
+        <span style={{ display: "inline-flex", marginLeft: 6 }}>
+          <FaExternalLinkAlt />
+        </span>
+      )}
     </a>
   );
 }
