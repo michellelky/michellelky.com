@@ -1,6 +1,6 @@
-# Michelle Lau's site
+# My website
 
-Personal website built with [Next.js](https://nextjs.org/).
+Personal website built with [Next.js](https://nextjs.org/), at https://www.michellelky.com/
 
 ## Getting Started
 
@@ -26,22 +26,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
   - /about
   - /blog (TODO)
 - /photography (TODO)
-
-## Issues
-
-Production build on Vercel suddenly stopped working as the `content` folder cannot be found.
-
-```
-[Error: ENOENT: no such file or directory, scandir '/var/task/content/projects'] {
-  errno: -2,
-  code: 'ENOENT',
-  syscall: 'scandir',
-  path: '/var/task/content/projects'
-}
-```
-
-- [Next.js API routes (and pages) should support reading files #8251](https://github.com/vercel/next.js/issues/8251)
-
 
 ## Credits
 
