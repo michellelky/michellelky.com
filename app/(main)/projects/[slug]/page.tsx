@@ -89,10 +89,11 @@ async function ProjectDetail({ params }: { params: { slug: string } }) {
           <div className={styles.infoGrid}>
             <p className={styles.heading}>Links</p>
             <div className={styles.btnRow}>
-              {links.github && <Link href={links.github}>GitHub</Link>}
-              {links.web && <Link href={links.web}>Visit Site</Link>}
               {links.apple && <Link href={links.apple}>App Store</Link>}
               {links.google && <Link href={links.google}>Google Play</Link>}
+              {links.web && <Link href={links.web}>Visit Site</Link>}
+              {links.info && <Link href={links.info}>More Info</Link>}
+              {links.github && <Link href={links.github}>GitHub</Link>}
             </div>
           </div>
         )}
