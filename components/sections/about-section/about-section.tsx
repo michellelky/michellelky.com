@@ -19,7 +19,7 @@ export default function AboutSection() {
 
       <div className={styles.textWrapper}>
         <p>
-          {`Hi there, I’m Michelle! I’m a software engineer based in Hong Kong.`}
+          {`Hi there, I’m Michelle! I’m a software developer based in Hong Kong.`}
         </p>
         <p>
           {`A few years ago, I became interested in web development - learning from tutorials online and eventually joined a coding bootcamp. Working in a small startup, I took up the role for a range of tasks from designing the UI, building with frontend frameworks like React, to setting up Node backend.`}

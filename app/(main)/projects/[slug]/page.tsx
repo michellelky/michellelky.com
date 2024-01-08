@@ -108,7 +108,6 @@ async function ProjectDetail({ params }: { params: { slug: string } }) {
           </div>
         )}
       </div>
-      a
     </AnimateWrapper>
   );
 }

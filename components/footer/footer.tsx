@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { FiGithub, FiTwitter, FiLinkedin, FiSun, FiMoon } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiSun, FiMoon } from "react-icons/fi";
+import { RiTwitterXLine } from "react-icons/ri";
 import Cookie from "js-cookie";
 
 import ExternalLink from "@/components/external-link";
@@ -55,7 +56,7 @@ export default function Footer({ initialTheme }: { initialTheme: string }) {
 
           <div className={styles.social}>
             <ExternalLink href={TWITTER} ariaLabel="Twitter">
-              <FiTwitter size={ICON_SIZE} />
+              <RiTwitterXLine size={ICON_SIZE} />
             </ExternalLink>
             <ExternalLink href={GITHUB} ariaLabel="GitHub">
               <FiGithub size={ICON_SIZE} />
